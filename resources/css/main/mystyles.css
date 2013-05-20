@@ -2,11 +2,97 @@
  * it's need for easiest update of newest wersions
 */
 
+.pull-left
+{
+float:left;	
+}
+
+.pull-right
+{
+float:right;	
+}
+
 
 /* Educator Homepage */
 
-#zikwarapper
+#zikwrapper
+{
+	
+}
+
+#zikinnerwrapper
 {
 background-color:#6bbde8;
-width:1000px;	
+width:1100px;
+margin:auto;
+}
+
+#zikmenupanel
+{
+width:100px;
+border:1px solid #ccc;		
+}
+
+#zikcontentpanel
+{
+width:900px;
+border:1px solid #ccc;	
+background-color:#FFFFFF;
+margin:5px 5px 5px 5px;
+padding-left:20px;
+padding-right:10px;
+}
+
+#zikheader
+{
+height:80px;	
+}
+
+
+#ziklogo
+{
+margin-top:-5px;
+}
+
+
+#zikaccountsetting 
+{
+margin-top:10px;		
+}
+
+
+#zikaccountsetting p
+{
+margin-right:10px;
+vertical-align:middle;		
+}
+
+.profilepic
+{
+margin-right:10px;	
+}
+
+
+#ziktilesmenu
+{
+width:380px;	
+}
+
+#ziklayoutarea
+{
+width:470px;
+height:487px;
+background-color:#03F;
+overflow:auto;
+overflow-x:hidden;
+}
+
+.clearmyfix
+{
+clear:both;	
+}
+
+.marginfix
+{
+margin-top:-105px;	
 }
