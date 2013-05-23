@@ -9,6 +9,7 @@
 <title>Educator Homepage</title>
 <link rel="icon" type="image/ico" href="favicon.ico"/>
 <link href="../../css/main/stylesheets.css" rel="stylesheet" type="text/css" />
+<link href="icons/fonts.css" rel="stylesheet" type="text/css" />
  <!--[if lte IE 7]>
  <link href="../../css/main/ie.css" rel="stylesheet" type="text/css" />
  <script type='text/javascript' src='js/plugins/other/lte-ie7.js'></script>
@@ -32,6 +33,50 @@
 <div id="zikmenupanel" class="pull-left">
 
 
+
+<div id="zikmenupanel" class="pull-left">
+	<div class="container">	
+			<nav id="menu" class="nav">					
+					<ul>
+						<li class="navactive">
+							<a href="#" class="nactive">
+								<span class="icons ">
+									<i aria-hidden="true" class="ico-home iactive"></i>
+								</span>
+								<span>My Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icons"> 
+									<i aria-hidden="true" class="ico-file"></i>
+								</span>
+								<span>My Courses</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icons">
+									<i aria-hidden="true" class="ico-user"></i>
+								</span>
+								<span>My Students</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icons">
+									<i aria-hidden="true" class="ico-chart-3"></i>
+								</span>
+								<span>My Analytics</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+		</div>
+</div><!--End of MenuContainer -->
+
+
+
 </div> <!--end of zikmenupanel-->
 
 <!-- _________________________start of contentpanel _________________________-->
@@ -53,12 +98,21 @@
 
 <div id="zikaccountwrapper" class="pull-left">
 <img src="../../img/home/profile.png" alt="Profilepic" align="middle" class="profilepic"/>
-
-Scott Chris 
-
+Scott Chris
 </div> <!--end of zikaccountwrapper-->
 
 
+				<div id="dd" class="wrapper-dropdown-5 pull-right" tabindex="1"> <i class="ico-locked" style="margin-right:5px;"></i>Account Settings
+						<ul class="dropdown">
+							<li><a href="#"><i class="icon-user"></i>Profile</a></li>
+							<li><a href="#"><i class="icon-cog"></i>Settings</a></li>
+							<li><a href="#"><i class="icon-remove"></i>Log out</a></li>
+						</ul>
+					</div><!--end of dropdown -->
+
+
+
+<div class="clearmyfix"></div>
 </div> <!--end of zikaccountsetting-->
 
 <div class="clearmyfix"> </div>
@@ -169,6 +223,8 @@ Scott Chris
 
 
 </div><!--end of main wrapper-->
-
+<script type="text/javascript" src="../../js/main/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/lib/myapps.js"></script>
+<script type="text/javascript" src="../../js/lib/mainmenu.js"></script>
 </body>
 </html>
