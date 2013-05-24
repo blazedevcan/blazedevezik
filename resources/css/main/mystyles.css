@@ -23,7 +23,7 @@ float:right;
 #zikinnerwrapper
 {
 background-color:#6bbde8;
-width:1050px;
+width:1110px;
 margin:auto;
 }
 
@@ -34,7 +34,7 @@ width:140px;
 
 #zikcontentpanel
 {
-width:900px;
+width:960px;
 /*border:1px solid #ccc;*/	
 background-color:#FFFFFF;
 margin:5px 5px 5px 5px;
@@ -79,13 +79,13 @@ height: 50px;
 
 #ziktilesmenu
 {
-width:380px;	
+width:440px;	
 }
 
 #ziklayoutarea
 {
-width:470px;
-height:487px;
+width:487px;
+height:570px;
 background-color:rgba(95, 158, 192, 0.94);
 overflow:auto;
 overflow-x:hidden;
@@ -468,5 +468,159 @@ a, button {
 		
 }
 
+/* __________________________tiles colors________________________ */
+
+/* BACKGROUND LIST */
+
+/* Solid Colors */
+.solid-blue { background:#00BBE2 !important;
+background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0.3))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0) 00%,rgba(255,255,255,0.3) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* IE10+ */
+	background: linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* W3C */ }
+.solid-blue-2 { background:#2C84EE; }
+.solid-darkblue { background:#044E94; }
+.solid-violetred { background:#781766; }
+.solid-red { background:#E51400;}
+.solid-red-2 { background:#E81750; }
+.solid-pink { background:#FF539B; }
+.solid-purple { background:#D02090; }
+.solid-orange { background:#FB8F02; }
+.solid-orange-2 { background:#FF6600; }
+.solid-orange-3 { background:#DD5F37; }
+.solid-coral { background:#CD5B45; }
+.solid-green { background:#67B239; }
+.solid-green-2 {background:#96BF01; }
+.solid-darkgreen { background:#016C38; }
+.solid-olive { background:#999900}
+.solid-grass { background:#CDCD00; }
+.solid-darkred { background:#5F0000; }
+.solid-gold { background:#FEE9AE; }
+.solid-yellow { background:#F7D100; }
+.solid-black { background:#000; }
+.solid-smoke { background:#F5F5F5; }
+/* End Solid Colors */
+
+/* END BACKGROUND LIST */
 
 
+
+
+/* MISC */
+.light-text {
+	color:#fff;
+}
+.dark-text {
+	color:#1e1e1e;
+}
+.gradient {
+	background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0.3))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0) 00%,rgba(255,255,255,0.3) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* IE10+ */
+	background: linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* W3C */
+}
+.shadow-white, .shadow-black, .shadow-blue, .shadow-green, .shadow-red {
+	display:inline-block;
+	text-decoration:none;
+}
+.shadow-white:hover {
+	box-shadow:0px 0px 6px 3px #fff;
+	-webkit-box-shadow:0px 0px 6px 3px #fff;
+	-moz-box-shadow:0px 0px 6px 3px #fff;
+	-o-box-shadow:0px 0px 6px 3px #fff;
+	-ms-box-shadow:0px 0px 6px 3px #fff;
+}
+.shadow-blue:hover {
+	box-shadow:0px 0px 6px 3px #38D1F7;
+	-webkit-box-shadow:0px 0px 6px 3px #38D1F7;
+	-moz-box-shadow:0px 0px 6px 3px #38D1F7;
+	-o-box-shadow:0px 0px 6px 3px #38D1F7;
+	-ms-box-shadow:0px 0px 6px 3px #38D1F7;
+}
+.shadow-green:hover {
+	box-shadow:0px 0px 6px 3px #AACA37;
+	-webkit-box-shadow:0px 0px 6px 3px #AACA37;
+	-moz-box-shadow:0px 0px 6px 3px #AACA37;
+	-o-box-shadow:0px 0px 6px 3px #AACA37;
+	-ms-box-shadow:0px 0px 6px 3px #AACA37;
+}
+.shadow-red:hover {
+	box-shadow:0px 0px 6px 3px #E81750;
+	-webkit-box-shadow:0px 0px 6px 3px #E81750;
+	-moz-box-shadow:0px 0px 6px 3px #E81750;
+	-o-box-shadow:0px 0px 6px 3px #E81750;
+	-ms-box-shadow:0px 0px 6px 3px #E81750;
+}
+.shadow-black:hover {
+	box-shadow:0px 0px 6px 3px #444;
+	-webkit-box-shadow:0px 0px 6px 3px #444;
+	-moz-box-shadow:0px 0px 6px 3px #444;
+	-o-box-shadow:0px 0px 6px 3px #444;
+	-ms-box-shadow:0px 0px 6px 3px #444;
+}
+
+
+/* __________________ Styles for MY Ties __________________________ */
+
+.tilespad 
+{
+padding:10px;	
+}
+
+.tilestext
+{
+
+}
+
+.tilestextspan
+{
+
+}
+
+.metrouicss .tile img
+{
+-moz-transition: all 1.2s;
+-webkit-transition: all 1.2s;
+-o-transition: all 1.2s;
+transition: all 1.2s;
+overflow: hidden;
+
+}
+
+.metrouicss .tile img:hover
+{
+-moz-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+-o-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);	
+}
+
+/* __________________ Styles for MY Tools __________________________ */
+
+.toolscontainer 
+{
+padding:5px;
+text-align:center;	
+}
+
+.toolma a:hover 
+{	
+color:#ccc;
+}
+
+
+.toolm
+{
+margin-top:-6px !important;	
+margin-bottom:6px !important;
+}
+
+.mytools
+{
+font-size:12px;	
+}

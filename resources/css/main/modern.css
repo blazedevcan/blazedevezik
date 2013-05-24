@@ -1447,13 +1447,14 @@ License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
   color: #ee1111 !important;
 }
 .metrouicss .bg-color-blue {
-  background-color: #2d89ef !important;
+  background: #044E94 !important;
 }
 .metrouicss .bg-color-blueLight {
-  background-color: #eff4ff !important;
+   background: #00BBE2 !important;
+
 }
 .metrouicss .bg-color-blueDark {
-  background-color: #2b5797 !important;
+ background: #2C84EE !important;
 }
 .metrouicss .bg-color-green {
   background-color: #00a300 !important;
@@ -1471,7 +1472,7 @@ License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
   background-color: #ffc40d !important;
 }
 .metrouicss .bg-color-orange {
-  background-color: #e3a21a !important;
+  background:#FB8F02 !important;
 }
 .metrouicss .bg-color-orangeDark {
   background-color: #da532c !important;
@@ -4033,10 +4034,11 @@ License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 .metrouicss .tile {
   display: block;
   float: left;
+  text-align:center;
   background-color: #525252;
   width: 120px;
   height: 120px;
-  cursor: pointer;
+  cursor:pointer;
   box-shadow: inset 0px 0px 1px #FFFFCC;
   text-decoration: none;
   color: #ffffff;
@@ -4049,7 +4051,7 @@ License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
   font-smooth: always;
   margin: 0 5px 3px 0;
   overflow: hidden;
-  border-radius:10px;
+  border-radius:5px;
   -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
@@ -4077,6 +4079,7 @@ License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
   color: #000000;
   color: #ffffff;
   line-height: 16px;
+  padding:12px;
 }
 .metrouicss .tile .tile-content:hover {
   color: rgba(0, 0, 0, 0.8);
@@ -4189,7 +4192,8 @@ License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
   height: 100%;
 }
 .metrouicss .tile.double {
-  width: 244px;
+  width: 245px;
+  padding:12px;
 }
 .metrouicss .tile.triple {
   width: 470px;
@@ -4198,10 +4202,12 @@ License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
   width: 630px;
 }
 .metrouicss .tile.double-vertical {
-  height: 240px;
+  height: 244px;
+ 
 }
 .metrouicss .tile.triple-vertical {
   height: 470px;
+  padding:12px;
 }
 .metrouicss .tile.quadro-vertical {
   height: 630px;
