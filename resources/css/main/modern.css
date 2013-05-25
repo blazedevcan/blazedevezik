@@ -4236,7 +4236,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', end
   padding:12px;
 }
 .metrouicss .tile.triple {
-  width: 470px;
+  width: 370px;
 }
 .metrouicss .tile.quadro {
   width: 630px;
@@ -4246,7 +4246,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', end
  
 }
 .metrouicss .tile.triple-vertical {
-  height: 470px;
+  height: 370px;
   padding:12px;
 }
 .metrouicss .tile.quadro-vertical {

@@ -44,8 +44,24 @@ padding-right:10px;
 
 #zikheader
 {
-height:80px;	
+	
 }
+
+.ribbon
+{
+margin-top: 10px;
+margin-right: -15px;
+margin-bottom: 10px;	
+}
+
+.ribbon p
+{
+position:absolute;
+margin-top: -35px;
+color: #fff;
+font-size: 12px;
+margin-left: 30px;
+}	
 
 
 #ziklogo
@@ -405,8 +421,16 @@ a, button {
 
 	/* Animating the height of the element*/
 	.nav a {
-		height: 6.8em;
+		height: 6.2em;
 	}
+	
+	/*.menulink {
+		color:#000;
+	}
+	
+	.a:hover > menulink {
+		color:rgb(22, 145, 190);
+	}*/
 		
 
 	/* Making the text follow the height animation */
@@ -440,7 +464,7 @@ a, button {
 		-o-transition: box-shadow .6s ease-in-out;
 		-ms-transition: box-shadow .6s ease-in-out;
 		transition: box-shadow .6s ease-in-out;
-		font-size:35px;
+		font-size:25px;
 	}	
 	
 	/* Animate the box-shadow to create the effect */
@@ -623,4 +647,103 @@ margin-bottom:6px !important;
 .mytools
 {
 font-size:12px;	
+}
+
+.courseware img
+{
+margin-bottom:9px;	
+}
+
+
+.createcontent 
+{
+margin-top:10px;
+text-align:left;	
+}
+
+
+.createcontenthead
+{
+font-size:22px !important;
+padding-bottom:10px;
+padding-top:7px;	
+font-weight:500 !important;
+}
+
+.createcontentheadsub
+{
+font-size:12px !important;
+font-weight:500 !important;
+}
+
+.createcontent p
+{
+margin-top:10px;	
+}
+
+.createcontent p a
+{
+font-size:12px;	
+}
+
+.managecontent p
+{
+font-size:12px !important;	
+}
+
+.createcontent img
+{
+width:20px;
+height:20px;
+padding-right:4px;	
+}
+
+.courseware
+{
+height:35px;	
+}
+
+.boxvertical ul li{
+	margin-left:15px;
+	width:40px;
+}
+.boxvertical img{
+	height:25px;
+	width:25px;
+}
+.boxvertical ul{
+	margin-top:10px;
+	list-style:none;
+}
+
+.workoffline ul li{
+	text-align:center !important;
+}
+.workoffline ul{
+	list-style:none;
+}
+.workoffline img{
+	height:35px;
+	width:35px;
+}
+.workoffline ul li{
+	margin-left:45px;
+}
+
+.learningperformance ul li{
+	text-align:center !important;
+}
+.learningperformance ul{
+	list-style:none;
+}
+.learningperformance img{
+	height:35px;
+	width:35px;
+}
+.learningperformance ul li{
+	margin-left:25px;
+}
+
+.toolsmargin {
+	margin-bottom:10px;
 }
