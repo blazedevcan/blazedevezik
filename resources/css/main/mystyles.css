@@ -779,10 +779,26 @@ height:35px;
 	margin-left:25px;
 }
 
+.triplevertical ul {
+	list-style:none;
+}
+
+.triplevertical img{
+	height:35px;
+	width:35px;
+}
+
+.triplevertical ul li {
+	margin-left:40px;
+}
+
+.triplevertical ul {
+	text-align:center !important;
+}
+
 .toolsmargin {
 	margin-bottom:10px;
 }
-
 
 
 /* ____________________ search box ______________________________ */
