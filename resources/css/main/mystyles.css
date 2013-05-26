@@ -40,6 +40,7 @@ background-color:#FFFFFF;
 margin:5px 5px 5px 5px;
 padding-left:20px;
 padding-right:10px;
+background-image:url(../../img/home/bgcontent.png);
 }
 
 #zikheader
@@ -268,7 +269,7 @@ margin-top:-105px;
 /*------------------------ styles for the main menu ------------------------------------ */
 /* Global CSS that are applied for all screen sizes */
 .nav{
-	margin-top:90px;
+	margin-top:170px;
 	margin-left:25px;
 }
 .nav ul {
