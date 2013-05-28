@@ -1,5 +1,15 @@
 // JavaScript Document
 
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+
+		});
+
 // Drop down for profile setting
 
 			function DropDown(el) {
