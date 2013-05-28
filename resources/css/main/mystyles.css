@@ -777,7 +777,7 @@ height:35px;
 	width:35px;
 }
 .learningperformance ul li{
-	margin-left:25px;
+	margin-left:18px;
 }
 
 .triplevertical ul {
@@ -799,6 +799,16 @@ height:35px;
 
 .toolsmargin {
 	margin-bottom:10px;
+}
+
+.toolswidth {
+	width:60px;
+	margin-left:15px;
+}
+
+.toolswidth img {
+	height:25px;
+	width:25px;
 }
 
 
