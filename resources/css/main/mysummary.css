@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.centered { margin: 0 auto; }
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  background: #D8D5D2;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.box h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.box img,
+#tumblelog img {
+  display: block;
+  width: 100%;
+}
+
+.rtl .box {
+  float: right;
+  text-align: right; 
+  direction: rtl;
+}
+
+
+
+.col1 { width: 80px; }
+.col2 { width: 180px; }
+.col3 { width: 280px; }
+.col4 { width: 380px; }
+.col5 { width: 480px; }
+
+.col1 img { max-width: 80px; }
+.col2 img { max-width: 180px; }
+.col3 img { max-width: 280px; }
+.col4 img { max-width: 380px; }
+.col5 img { max-width: 480px; }
+
+/**** Gutters ****/
+
+.has-gutters .box {
+  margin: 5px 0;
+}
+
+.has-gutters .col1 { width: 90px; }
+.has-gutters .col2 { width: 230px; }
+.has-gutters .col3 { width: 370px; }
+.has-gutters .col4 { width: 550px; }
+
+/**** Transitions ****/
+
+.transitions-enabled.masonry,
+.transitions-enabled.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.transitions-enabled.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.transitions-enabled.masonry  .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+
+/* disable transitions on container */
+.transitions-enabled.infinite-scroll.masonry {
+  -webkit-transition-property: none;
+     -moz-transition-property: none;
+      -ms-transition-property: none;
+       -o-transition-property: none;
+          transition-property: none;
+}
+
+/* css for box */
+
+.wrap {
+    width:250px;
+    background:#FFF;
+    padding: 10px;
+	float:left;
+	margin:5px;
+	background: linear-gradient( white, white 50%, rgb(120, 207, 235) 50%, rgb(141, 214, 228));
+	background-size: 100% 202%;
+    transition: all 0.2s ease;
+	cursor:pointer;
+}
+
+.wrap:hover
+{
+ background-position: 100% 100%;	
+}
+
+.wrap:hover p
+{
+ color:#fff;
+}
+
+.wrap:hover .horiz-flag::before 
+{
+border-right-color: rgb(141, 214, 228);
+}
+
+.wrap:hover .horiz-flag
+{
+-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+-moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgb(157, 177, 15)), color-stop(100%, rgb(205, 240, 23)));
+
+background-image: -webkit-linear-gradient(rgb(157, 177, 15)), rgb(205, 240, 23));
+background-image: -moz-linear-gradient(rgb(157, 177, 15)), rgb(205, 240, 23));
+background-image: -o-linear-gradient(rgb(157, 177, 15)), rgb(205, 240, 23));
+background-image: -ms-linear-gradient(rgb(157, 177, 15)), rgb(205, 240, 23));
+background-image: linear-gradient(rgb(157, 177, 15)), rgb(205, 240, 23));
+display: -moz-inline-box;
+-moz-box-orient: vertical;
+display: inline-block;
+vertical-align: middle;
+height: 40px;
+line-height: 40px;
+position: absolute;
+padding-right: 40px;
+left: -2px;
+padding-left: 10px;
+color: white;	
+}
+
+.rtl .wrap {
+  float: right;
+  text-align: right; 
+  direction: rtl;
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+      position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect7:before, .effect7:after
+{
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+
+.effect7:after
+{
+    right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+.wrap img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.example-number {
+position: relative;
+width: 35px;
+height: 35px;
+text-align: center;
+font: 20px/35px Arial, sans-serif;
+color: #fff;
+background: rgb(31, 167, 201);
+}
+
+
+.example-number:before {
+content: "";
+position: absolute;
+bottom: -15px;
+right: 0;
+border-width: 0 0 15px 15px;
+border-style: solid;
+border-color: transparent rgb(31, 160, 201);
+}
+
+.summaryhead
+{
+font-size: 18px !important;
+margin: 0px;
+color: #fff;	
+}
+
+
+.horiz-flag {
+-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+-moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9FBFDC), color-stop(100%, rgb(31, 167, 201)));
+background-image: -webkit-linear-gradient(#9FBFDC, rgb(31, 167, 201));
+background-image: -moz-linear-gradient(#9FBFDC, rgb(31, 167, 201));
+background-image: -o-linear-gradient(#9FBFDC, rgb(31, 167, 201));
+background-image: -ms-linear-gradient(#9FBFDC, rgb(31, 167, 201));
+background-image: linear-gradient(#9FBFDC, rgb(31, 167, 201));
+display: -moz-inline-box;
+-moz-box-orient: vertical;
+display: inline-block;
+vertical-align: middle;
+height: 40px;
+line-height: 40px;
+position: absolute;
+padding-right: 40px;
+left: -2px;
+padding-left: 10px;
+color: white;
+}
+
+.horiz-flag::before {
+content: '';
+display: block;
+height: 0;
+border-style: solid;
+border-width: 20px;
+border-color: transparent;
+border-right-color: #fff;
+position: absolute;
+right: -1px;
+top: 0;
+}
+
+.boxfont
+{
+ font-family: 'Segoe UI Semibold', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+ padding-top:10px;	
+}
+
+
+
+
+
+/*Iso top functionality*/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.isotoplinks a
+{
+color:#fff !important;	
+}
+
+
+.isotoplinks a:hover
+{
+color:#ccc !important;	
+}

@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />   
+ <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+ <![endif]-->                
+<title>My Summary</title>
+<link rel="icon" type="image/ico" href="../educator/favicon.ico"/>
+<link href="../../css/main/stylesheets.css" rel="stylesheet" type="text/css" />
+<link href="../../css/main/mysummary.css" rel="stylesheet" type="text/css" />
+<link href="../../css/lib/scrollbar.css" rel="stylesheet" type="text/css" />
+
+<link href="icons/fonts.css" rel="stylesheet" type="text/css" />
+ <!--[if lte IE 7]>
+ <link href="../../css/main/ie.css" rel="stylesheet" type="text/css" />
+ <script type='text/javascript' src='js/plugins/other/lte-ie7.js'></script>
+ <![endif]--> 
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script src="../../js/main/jquery-1.9.1.min.js"></script>  
+<script type="text/javascript" src="../../js/main/other/isotope/jquery.isotope.min.js"></script>
+<script>
+ 
+
+$('#container4').isotope({
+    
+       /* itemSelector : '.element',
+        masonry : {
+          columnWidth : 120,
+		  rowHeight: auto
+        },
+        masonryHorizontal : {
+          rowHeight: auto
+        },
+        cellsByRow : {
+          columnWidth : 240,
+          rowHeight : auto
+        },
+        cellsByColumn : {
+          columnWidth : 240,
+          rowHeight : auto
+        }*/
+		      });
+
+		
+    $(function(){
+    
+      var $container = $('#container4');
+    
+      $container.isotope({
+        staightDown: {
+          columnWidth: 120
+        },
+        sortBy: 'number',
+        getSortData: {
+          number: function( $elem ) {
+            var number = $elem.hasClass('element') ? 
+              $elem.find('.number').text() :
+              $elem.attr('data-number');
+            return parseInt( number, 10 );
+          },
+          alphabetical: function( $elem ) {
+            var name = $elem.find('.name'),
+                itemText = name.length ? name : $elem;
+            return itemText.text();
+          }
+        }
+      });
+    
+      
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+		 });
+		
+		         
+      
+  
+$('#container4').isotope({ filter: '.my-selector' }, function( $items ) {
+  var id = this.attr('id'),
+      len = $items.length;
+  console.log( 'Isotope has filtered for ' + len + ' items in #' + id );
+});
+
+
+ 
+function showall()
+{
+$('#container4').isotope({ filter: '.All' });
+}
+
+function showactive()
+{
+$('#container4').isotope({ filter: '.Active' });
+}
+
+function showreview()
+{
+$('#container4').isotope({ filter: '.Review' });
+}
+
+
+</script>
+
+
+
+</head>
+<body>
+ 
+ <div class="isotoplinks">
+   
+    <a href="#linkurl" data-option-value="straightDown" style="padding:5px;" onclick="showall()" >All </a>
+    <a href="#linkurl" data-option-value="straightDown" style="padding:5px;" onclick="showactive()" >Video</a>
+    <a href="#linkurl" data-option-value="straightDown" style="padding:5px;" onclick="showreview()" >Weblinks </a>
+     <a href="#linkurl" data-option-value="straightDown" style="padding:5px;" onclick="showreview()" >Others </a>
+  
+    </div>
+ 
+ 
+<div id="container4" class="createcontent-mainwrapper isotopbody">
+
+<div class="wrap item All Review">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Demography</p></span>  <div class="pull-right"><div class="example-number">03</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7 Active">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Address</p></span>  <div class="pull-right"><div class="example-number">01</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Lifestyle</p></span>  <div class="pull-right"><div class="example-number">12</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Interests</p></span>  <div class="pull-right"><div class="example-number">03</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+        
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Privacy</p></span>  <div class="pull-right"><div class="example-number">10</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Delegation</p></span>  <div class="pull-right"><div class="example-number">09</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Badge</p></span>  <div class="pull-right"><div class="example-number">03</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Role</p></span>  <div class="pull-right"><div class="example-number">14</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Contacts</p></span>  <div class="pull-right"><div class="example-number">14</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Peer</p></span>  <div class="pull-right"><div class="example-number">11</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Followers</p></span>  <div class="pull-right"><div class="example-number">10</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Follows</p></span>  <div class="pull-right"><div class="example-number">01</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Subscriptions</p></span>  <div class="pull-right"><div class="example-number">05</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Rewards</p></span>  <div class="pull-right"><div class="example-number">12</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Cards</p></span>  <div class="pull-right"><div class="example-number">10</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Locker</p></span>  <div class="pull-right"><div class="example-number">07</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Questions</p></span>  <div class="pull-right"><div class="example-number">06</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Poll</p></span>  <div class="pull-right"><div class="example-number">04</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">Wishlist</p></span>  <div class="pull-right"><div class="example-number">03</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+
+
+<div class="wrap effect7">   
+ <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg"/>
+ 
+<div class="clearmyfix"> </div>  
+<span class="horiz-flag pull-left"><p class="summaryhead">PIP</p></span>  <div class="pull-right"><div class="example-number">1</div> </div>
+ 
+ <div class="clearmyfix"> </div> 
+        <p class="boxfont">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus.
+         
+       </p> 
+       
+       <a class="pull-right" href="http://www.designshock.com/"> Read More </a>
+
+<div class="clearmyfix"> </div>
+
+
+</div>
+  
+  
+ <div class="clearmyfix"> </div> 
+
+</div> <!-- #container -->
+
+
+</body>
+</html>

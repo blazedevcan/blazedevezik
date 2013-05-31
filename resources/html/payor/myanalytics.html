@@ -6,10 +6,11 @@
  <!--[if gt IE 8]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
  <![endif]-->                
-<title>Educator Homepage</title>
+<title>MY Analytics</title>
 <link rel="icon" type="image/ico" href="../educator/favicon.ico"/>
 <link href="../../css/main/stylesheets.css" rel="stylesheet" type="text/css" />
 <link href="icons/fonts.css" rel="stylesheet" type="text/css" />
+<link href="../../js/main/other/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
  <!--[if lte IE 7]>
  <link href="../../css/main/ie.css" rel="stylesheet" type="text/css" />
  <script type='text/javascript' src='js/plugins/other/lte-ie7.js'></script>
@@ -102,7 +103,7 @@ Scott Chris
 <div class="ribbon pull-right">
 
 <img src="../../img/home/ribbon.png"/>
-<p>A few recommendations for you to optimize time and meet your goals today </p>
+<p><a class="fancybox fancybox.iframe" href="iframe.html">A few recommendations for you to optimize time and meet your goals today !</a> </p>
 
 </div> <!--end of ribbon-->
 
@@ -113,14 +114,14 @@ Scott Chris
 
 <div class="breadlinks pull-left">
 
-<div class="fifteen columns" id="page-title">
-        
-       
-             
-        <div class="breadcrumbs"><a class="back" href="javascript:history.back()"></a><a href="http://theme.crumina.net/onetouch" style="margin-left:50px;">Home</a> <span class="delim">/</span> My Home</div>
-
-
-      </div>
+<div id="breadcrumb">
+			<ul class="crumbs">
+				<li class="first"><a href="#" style="z-index:9;"><span></span>Home</a></li>
+				<li><a  href="#" style="z-index:8; color:#09F;">My Home</a></li>
+				
+			</ul>
+		</div>
+  <div class="clearmyfix">   </div>   
 
 </div> <!--end of breadlinks-->
 
@@ -138,7 +139,6 @@ Scott Chris
 
 
 </div> <!--end of breadcrumbox-->
-
 <div class="clearmyfix"> </div>
 
 
@@ -267,6 +267,67 @@ Scott Chris
 
 <div class="clearmyfix"> </div>
 
+<div id="footercontainer">
+
+<div id="footerborder">
+</div> <!--end of footerborder-->
+
+<div id="footernav">
+
+<p> Newsletter Signup <img src="../../img/home/newsletter.png" style="vertical-align:middle; height:25px;"/> to get prompt reply for your queries</p>
+
+</div> <!--end of footernav-->
+
+
+<div id="footersub">
+
+<div class="companyinfo pull-left">
+<ul>
+<li style="font-weight:bold;"> Company : </li>
+<li> <a href="#linkurl"> About Us </a> </li>
+<li><a href="#linkurl">Ziksana Connect</a> </li>
+<li><a href="#linkurl">Contact Us</a> </li>
+</ul>
+
+</div> <!--end of companyinfo-->
+
+
+<div class="socialmedia pull-left">
+
+<ul>
+<li><a href="#" title="Twitter"><img src="../../img/socialmedia/twitter.png" alt="Twitter" /></a> </li>
+<li><a href="#" title="Twitter"><img src="../../img/socialmedia/facebook.png" alt="Twitter" /></a> </li>
+<li><a href="#" title="Twitter"><img src="../../img/socialmedia/linkedin.png" alt="Twitter" /></a> </li>
+<li><a href="#" title="Twitter"><img src="../../img/socialmedia/rss.png" alt="Twitter" /></a> </li>
+<li><a href="#" title="Twitter"><img src="../../img/socialmedia/youtube.png" alt="Twitter" /></a> </li>
+
+</ul>
+
+
+</div> <!--end of socialmedia-->
+
+
+<div class="location pull-left">
+<ul>
+<li style="font-weight:bold;"> Location : </li>
+<li> <a href="#linkurl">New York</a> </li>
+<li><a href="#linkurl">Amsterdam</a> </li>
+<li><a href="#linkurl">Banglore</a> </li>
+</ul>
+
+</div> <!--end of companyinfo-->
+
+
+<div class="clearmyfix"> </div>
+
+<p class="copyright" style="text-align:center;"> Copyright@2013 Ziksana </p>
+
+</div> <!--end of footersub-->
+
+
+</div> <!--end of footercontainer-->
+
+
 
 </div> <!--end of zikinnerwrapper-->
 
@@ -275,5 +336,6 @@ Scott Chris
 <script type="text/javascript" src="../../js/main/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/lib/myapps.js"></script>
 <script type="text/javascript" src="../../js/lib/mainmenu.js"></script>
+<script type="text/javascript" src="../../js/main/other/fancybox/jquery.fancybox.js"> </script>
 </body>
 </html>
