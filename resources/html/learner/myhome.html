@@ -14,7 +14,39 @@
  <!--[if lte IE 7]>
  <link href="../../css/main/ie.css" rel="stylesheet" type="text/css" />
  <script type='text/javascript' src='js/plugins/other/lte-ie7.js'></script>
- <![endif]-->    
+ <![endif]-->   
+ <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script>
+$(document).ready(function()
+				
+{
+   
+	$("#kps").click(function(){
+	
+    // load home page when the page loads
+    $("#zikmiddlepanel").fadeIn(1000).load("mysummary.html");
+	
+	$("#breadcrumb ul").append('<li><a  href="#" style="color:#09F;">My Subscription</a></li>');
+	
+	});
+	
+	
+	$("#myprofile").click(function()
+	{
+	
+	$("#zikmiddlepanel").fadeIn(1000).load("myprofile.html");
+	
+	$("#breadcrumb ul").append('<li><a  href="#" style="color:#09F;">My Profile</a></li>');
+	
+	});
+	
+	
+});
+		
+		
+		
+
+</script> 
 </head>
 
 <body class="metrouicss">
@@ -126,7 +158,10 @@ Scott Chris
 <div id="breadcrumb">
 			<ul class="crumbs">
 				<li class="first"><a href="#" style="z-index:9;"><span></span>Home</a></li>
-				<li><a  href="#" style="z-index:8; color:#09F;">My Home</a></li>
+				<li><a  href="myhome.html" style="z-index:8; color:#09F;">My Home</a></li>
+                
+                
+                
 				
 			</ul>
 		</div>
@@ -183,19 +218,27 @@ Scott Chris
   </div> <!--end of tiles-1-->
   
   
-  <div class="tile bg-color-blue tilespad">
+  <a href="#" id="kps">
+  <div class="tile bg-color-blue">
  
-  <img src="../../img/metroicons/learner/subscription.png" alt="My Subscription"/>
+  <img src="../../img/metroicons/learner/subscription.png" alt="My Subscription" class="margintop10 tilesimgsze"/>
   
+ 
   <p class="tilestext">My Subscription </p>
+
+  
+  
   </div> <!--end of tiles-2-->
   
+  </a>
   
   <div class="tile bg-color-gray tilespad">
  
-  <img src="../../img/metroicons/contact.png" alt="Contact Request"/>
+ <p class="tilestexthead"> 3 New </p>
+ 
+  <img src="../../img/metroicons/contact.png" alt="Contact Request" class="tilesimgsze" style="height:50px;"/>
   
-  <p class="tilestext">3 New Contact Request </p>
+  <p class="tilestext">Contact Request </p>
  
   </div> <!--end of tiles-3-->
   
@@ -204,7 +247,7 @@ Scott Chris
  
  <img src="../../img/metroicons/learner/messages.png" alt="Messages"/>
   
-  <p class="tilestext">3 Messages </p>
+  <p class="tilestext" style="left:90px;">Messages </p>
  
   </div> <!--end of tiles-4-->
   
@@ -222,7 +265,7 @@ Scott Chris
   
    
   <div class="profile">
-  <a href="#linkurl">
+  <a href="#linkurl" id="myprofile">
   <img src="../../img/metroicons/learner/tool_myprofile.png"/>
   <p class="toolm" style="font-size:10px;"> Profile </p>
   </a>
@@ -321,8 +364,8 @@ Scott Chris
   
   <div class="tile bg-color-grayDark tilespad" style="margin-top:-124px;" >
   
-  <img src="../../img/metroicons/learner/group.png" align="Group"/>
-  <p> My Group </p>
+  <img src="../../img/metroicons/learner/group.png" align="Group" style="height:80px;" class=""/>
+  <p class="tilestext"> My Group </p>
  
   </div> <!--end of tiles-6-->
   
@@ -330,30 +373,25 @@ Scott Chris
   
   <div class="tile bg-color-blueLight tilespad">
   <img src="../../img/metroicons/learner/poll.png" align="poll"/>
- <p> Poll </p>
+ <p class="tilestext"> Poll </p>
   </div> <!--end of tiles-8-->
   
   
  
   
    <div class="tile bg-color-blue tilespad" style="margin-top:-124px;" >
- <img src="../../img/metroicons/learner/class.png" align="Class"/>
- <p> My Class </p>
+ <img src="../../img/metroicons/learner/class.png" class="tilesimgsze margintop10" style="height:50px;"/>
+ <p class="tilestext"> My Class </p>
   </div> <!--end of tiles-7-->
   
+  <div class="tile bg-color-grayDark tilespad"> <img src="../../img/metroicons/learner/announcement.png" alt="Announcement" class="tilesimgsze"/>
+    <p class="tilestext">Announcement </p>
+  </div>
   <div class="tile  bg-color-blue tilespad">
-  <img src="../../img/metroicons/learner/kb.png" alt="Announcement"/>
- <p>Know me Better </p>
+  <img src="../../img/metroicons/learner/kb.png" alt="Announcement" class="tilesimgsze"/>
+ <p class="tilestext">Know me Better </p>
  
-  </div> <!--end of tiles-9-->
-  
-   
-  
-  <div class="tile bg-color-grayDark tilespad">
- 
- <img src="../../img/metroicons/learner/announcement.png" alt="Announcement"/>
- <p>Announcement </p>
-  </div> <!--end of tiles-10-->
+  </div> <!--end of tiles-9--><!--end of tiles-10-->
   
   
 
@@ -371,6 +409,11 @@ Scott Chris
 
 <p> Monday </p>
 
+
+		
+		<div id="result">
+		
+		</div>
 
 </div> <!--end of ziklayoutarea-->
 
@@ -457,9 +500,10 @@ Scott Chris
 
 
 </div><!--end of main wrapper-->
-<script type="text/javascript" src="../../js/main/jquery-1.9.1.min.js"></script>
+
 <script type="text/javascript" src="../../js/lib/myapps.js"></script>
 <script type="text/javascript" src="../../js/lib/mainmenu.js"></script>
 <script type="text/javascript" src="../../js/main/other/fancybox/jquery.fancybox.js"> </script>
+
 </body>
 </html>

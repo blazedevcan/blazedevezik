@@ -146,11 +146,18 @@ width:375px;
 
 #ziklayoutarea
 {
-width:555px;
+width:535px;
 height:490px;
 background-color:rgba(95, 158, 192, 0.94);
 overflow:auto;
 overflow-x:hidden;
+}
+
+#zikmiddlepanel
+{
+height: 540px;
+overflow: auto;
+overflow-x: hidden;	
 }
 
 .layoutareahead
@@ -722,9 +729,31 @@ background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0) 0%, rgba(255,255,2
 padding:10px;	
 }
 
+.tilestexthead
+{
+font-family: 'Segoe UI Semibold', 'Open Sans', Verdana,Arial, Helvetica, sans-serif !important;
+font-size:16px !important;	
+}
+
+
 .tilestext
 {
+font-family: 'Segoe UI Semibold', 'Open Sans', Verdana,Arial, Helvetica, sans-serif !important;
+position:absolute;
+bottom:6px;
+left:4px;
+margin:0px !important;
+}
 
+.margintop10
+{
+margin-top:20px;	
+}
+
+.tilesimgsze
+{
+height:70px;
+width:70px;	
 }
 
 .tilestextspan
@@ -1020,4 +1049,17 @@ height:35px;
 .breadcrumbs
 {
 margin-top:10px;	
+}
+
+
+/*_______________________ Points ___________________*/
+
+
+.pointsribbon
+{
+position:absolute;
+bottom:0;
+right:0;
+width:80px;
+background-color:#930;	
 }
